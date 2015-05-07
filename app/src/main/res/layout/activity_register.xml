@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.bigbytesoft.agricultura.RegisterActivity"
+    android:background="@drawable/fondo"
+    android:clickable="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/principalLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topBar">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibBack"
+                android:background="@drawable/arrow_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topHolder">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Registro"
+                android:id="@+id/textView"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textFieldHolder"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/etUsername"
+                android:hint="Usuario"
+                android:background="#50ffffff"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/etName"
+                android:hint="Nombres"
+                android:background="#50ffffff"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/etPassword"
+                android:hint="Contraseña"
+                android:background="#50ffffff"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/etCorreo"
+                android:hint="Correo"
+                android:background="#50ffffff"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registroButtonHolder">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibSignup"
+                android:src="@drawable/signup_button"
+                android:background="#00ffffff"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
